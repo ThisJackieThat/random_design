@@ -119,7 +119,13 @@ textarea {
 
  .menu_logo {
     position: fixed;
-    right: 5px;
+    right: 1em;
+ }
+
+ .main_head h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
  }
 
  a {
@@ -129,14 +135,16 @@ textarea {
 
  .main_head {
     text-align: center;
-    padding: 1.2em;
+    padding: 5em;
     background-image: url(../img/purple-bg.jpeg);
  }
 
  .header_button {
-    border: .15em solid black;
+    border: .15em solid white;
     background-color: transparent;
     color: white;
+    font-size: 1.6em;
+    padding: .75em 1em .75em 1em;
  }
 
  .header_button:hover {
@@ -144,8 +152,9 @@ textarea {
     color: black;
  }
 
- section {
-
+ .section p {
+    line-height: 1.6em;
+    font-size: 1.2em;
  }
 
 .project_list {
@@ -165,7 +174,6 @@ textarea {
 
  .project_list li {
     float: left;
-    border: 1px solid red;
     width: 48%;
     list-style: none;
     text-align: center;
@@ -173,6 +181,7 @@ textarea {
     padding: 24%;
     position: relative;
     background-size: cover;
+    margin: .15em;
  }
 
  .project_list li:hover .project_title {
@@ -217,9 +226,16 @@ textarea {
     background-image: url(../img/7-bar.jpg);
  }
 
+ .section {
+    border-bottom: 1px solid #D3D3D3;
+    padding: 2em 0em 2em 1.5em;
+ }
+
 
  footer {
     clear: both;
+    text-align: center;
+    padding: 1em;
  }
 
 
