@@ -95,19 +95,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ * {
+    box-sizing: border-box;
+ }
+
  body {
-    padding-top: 2.5em;
+    padding-top: 75px;
  }
 
  nav {
     background-color: black;
     color: white;
+    font-weight: bold;
+    font-size: 1.4em;
     padding: 1em;
     position: fixed;
     width: 100%;
     margin: 0;
     top: 0;
-    height: 2.5em;
+    height: 75px;
+    z-index: 1;
  }
 
  .menu_logo {
@@ -121,9 +128,9 @@ textarea {
  }
 
  .main_head {
-    border: 1px solid red;
     text-align: center;
-    background-image: 
+    padding: 1.2em;
+    background-image: url(../img/purple-bg.jpeg);
  }
 
  .header_button {
@@ -139,6 +146,80 @@ textarea {
 
  section {
 
+ }
+
+.project_list {
+    overflow: auto;
+    padding-left: 0;
+}
+
+.project_title {
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    top: 0;
+}
+
+ .project_list li {
+    float: left;
+    border: 1px solid red;
+    width: 48%;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 24%;
+    position: relative;
+    background-size: cover;
+ }
+
+ .project_list li:hover .project_title {
+        background: transparent;
+        color: white;
+
+ }
+
+
+ .project_list li:nth-of-type(1) {
+    /* first image*/
+    background-image: url(../img/1-cocktail.jpeg);
+ }
+
+ .project_list li:nth-of-type(2) {
+    /* second image*/
+    background-image: url(../img/2-disco.jpeg);
+ }
+
+.project_list li:nth-of-type(3) {
+    /* third image*/
+    background-image: url(../img/3-bookstore.jpeg);
+ }
+
+ .project_list li:nth-of-type(4) {
+    /* fourth image*/
+    background-image: url(../img/4-traffic.jpeg);
+ }
+
+ .project_list li:nth-of-type(5) {
+    /* fifth image*/
+    background-image: url(../img/5-concert.jpg);
+ }
+
+ .project_list li:nth-of-type(6) {
+    /* sixth image*/
+    background-image: url(../img/6-nightlife.jpg);
+ }
+
+.project_list li:nth-of-type(7) {
+    /* seventh image*/
+    background-image: url(../img/7-bar.jpg);
+ }
+
+
+ footer {
+    clear: both;
  }
 
 
