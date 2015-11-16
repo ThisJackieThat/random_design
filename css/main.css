@@ -226,6 +226,21 @@ textarea {
     background-image: url(../img/7-bar.jpg);
  }
 
+  .project_list li:nth-of-type(8) {
+    /* eight image*/
+    background-image: url(../img/5-concert.jpg);
+ }
+
+ .project_list li:nth-of-type(9) {
+    /* ninth image*/
+    background-image: url(../img/6-nightlife.jpg);
+ }
+
+.project_list li:nth-of-type(10) {
+    /* tenth image*/
+    background-image: url(../img/7-bar.jpg);
+}
+
  .section {
     border-bottom: 1px solid #D3D3D3;
     padding: 2em 0em 2em 1.5em;
