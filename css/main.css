@@ -95,7 +95,51 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ body {
+    padding-top: 2.5em;
+ }
 
+ nav {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    height: 2.5em;
+ }
+
+ .menu_logo {
+    position: fixed;
+    right: 5px;
+ }
+
+ a {
+    text-decoration: none;
+    color: white;
+ }
+
+ .main_head {
+    border: 1px solid red;
+    text-align: center;
+    background-image: 
+ }
+
+ .header_button {
+    border: .15em solid black;
+    background-color: transparent;
+    color: white;
+ }
+
+ .header_button:hover {
+    background-color: white;
+    color: black;
+ }
+
+ section {
+
+ }
 
 
 
