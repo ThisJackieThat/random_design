@@ -95,12 +95,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- * {
+ 
+ html {
     box-sizing: border-box;
  }
 
+ *, *:before, *:after {
+  box-sizing: inherit;
+}
+
  body {
-    padding-top: 75px;
+    padding-top: 3em;
+ }
+
+ img {
+    max-width: 100%;
  }
 
  nav {
@@ -157,95 +166,41 @@ textarea {
     font-size: 1.2em;
  }
 
-.project_list {
-    overflow: auto;
-    padding-left: 0;
+.project_thumb:hover {
+    background-color: hsla(0,0%,0%,.5);
 }
 
-.project_title {
-    background: rgba(255,255,255,.5);
-    position: absolute;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    height: 100%;
-    top: 0;
+.project_thumb:hover h3 {
+    color: white;
 }
 
- .project_list li {
+ .project_thumb {
     float: left;
-    width: 48%;
-    list-style: none;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 24%;
+    width: 50%;
     position: relative;
-    background-size: cover;
-    margin: .15em;
+    border: .125em solid white;
+    background-color: hsla(0,100%,100%,.75);
  }
 
- .project_list li:hover .project_title {
-        background: transparent;
-        color: white;
-
+ .project_thumb img {
+    position: relative;
+    z-index: -10;
  }
 
-
- .project_list li:nth-of-type(1) {
-    /* first image*/
-    background-image: url(../img/1-cocktail.jpeg);
+ .project_thumb h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    color: black;
  }
-
- .project_list li:nth-of-type(2) {
-    /* second image*/
-    background-image: url(../img/2-disco.jpeg);
- }
-
-.project_list li:nth-of-type(3) {
-    /* third image*/
-    background-image: url(../img/3-bookstore.jpeg);
- }
-
- .project_list li:nth-of-type(4) {
-    /* fourth image*/
-    background-image: url(../img/4-traffic.jpeg);
- }
-
- .project_list li:nth-of-type(5) {
-    /* fifth image*/
-    background-image: url(../img/5-concert.jpg);
- }
-
- .project_list li:nth-of-type(6) {
-    /* sixth image*/
-    background-image: url(../img/6-nightlife.jpg);
- }
-
-.project_list li:nth-of-type(7) {
-    /* seventh image*/
-    background-image: url(../img/7-bar.jpg);
- }
-
-  .project_list li:nth-of-type(8) {
-    /* eight image*/
-    background-image: url(../img/5-concert.jpg);
- }
-
- .project_list li:nth-of-type(9) {
-    /* ninth image*/
-    background-image: url(../img/6-nightlife.jpg);
- }
-
-.project_list li:nth-of-type(10) {
-    /* tenth image*/
-    background-image: url(../img/7-bar.jpg);
-}
 
  .section {
     border-bottom: 1px solid #D3D3D3;
     padding: 2em 0em 2em 1.5em;
  }
-
 
  footer {
     clear: both;
